@@ -1,0 +1,28 @@
+.edu-exchange-section {
+  background-color: #f7f7f7;
+}
+
+.edu-exchange-section h2 {
+  color: theme("colors.ananda-orange");
+}
+
+.edu-exchange-program {
+  transition: all 0.3s ease;
+}
+
+.edu-exchange-program:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enquire-button {
+  background-color: theme("colors.ananda-orange");
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.enquire-button:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

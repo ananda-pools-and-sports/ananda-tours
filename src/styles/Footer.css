@@ -1,0 +1,38 @@
+.footer-link-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-link-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ff6600;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.footer-link-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.newsletter-input {
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.5);
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}

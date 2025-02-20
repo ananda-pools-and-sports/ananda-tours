@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap");
+
+.cultural-tours {
+  background-color: #fff9f0;
+  /* background-image: url("../assets/cultural-pattern.svg"); */
+  background-repeat: repeat;
+  background-size: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cultural-tours::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 249, 240, 1),
+    rgba(255, 249, 240, 0)
+  );
+  z-index: 1;
+}
+
+.cultural-tours::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 249, 240, 1),
+    rgba(255, 249, 240, 0)
+  );
+  z-index: 1;
+}
+
+.cultural-tours .container {
+  position: relative;
+  z-index: 2;
+}
+
+.cultural-tours h2 {
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #ff6b00, #ff9e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cultural-tours h3 {
+  font-family: "Playfair Display", serif;
+  color: #ff6b00;
+}
+
+.cultural-tours p {
+  font-family: "Poppins", sans-serif;
+}
+
+.cultural-tours .image-slider {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cultural-tours .image-slider img {
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.cultural-tours .feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cultural-tours .feature-card:hover {
+  transform: translateY(-5px) rotate(2deg);
+  box-shadow: 0 15px 30px rgba(255, 107, 0, 0.1);
+}
+
+.cultural-tours .site-card {
+  background: white;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 107, 0, 0.1);
+  overflow: hidden;
+}
+
+.cultural-tours .site-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 107, 0, 0.1);
+}
+
+.cultural-tours .site-card h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.cultural-tours .book-button {
+  background: linear-gradient(45deg, #ff6b00, #ff9e00);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.cultural-tours .book-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .cultural-tours .image-slider {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cultural-tours .image-slider {
+    height: 300px;
+  }
+}
