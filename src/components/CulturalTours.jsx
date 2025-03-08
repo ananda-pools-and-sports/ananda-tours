@@ -90,9 +90,9 @@ const CulturalTours = () => {
               Immerse Yourself in Culture
             </h3>
             <p className="text-lg text-gray-700 mb-6">
-              At Ananda Sports Tours, we believe that exploring diverse cultures
-              and heritage is a journey of discovery. Our carefully curated
-              cultural tours offer a perfect blend of historical exploration and
+              At Ananda Tours, we believe that exploring diverse cultures and
+              heritage is a journey of discovery. Our carefully curated cultural
+              tours offer a perfect blend of historical exploration and
               spiritual enrichment, allowing you to experience the richness of
               India's traditions and history firsthand.
             </p>

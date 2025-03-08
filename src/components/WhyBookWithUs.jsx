@@ -296,7 +296,7 @@ const WhyBookWithUs = () => {
           </button> */}
         </div>
 
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <h3 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8 font-sans">
             What Our Customers Say
           </h3>
@@ -336,7 +336,7 @@ const WhyBookWithUs = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-white mb-6 font-sans">

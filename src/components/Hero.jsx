@@ -211,7 +211,7 @@ const Hero = () => {
         }`}
       >
         <div className="mt-16 sm:mt-24">
-          <h2 className="text-3xl font-bold mb-6">Ananda Sports Tours</h2>
+          <h2 className="text-3xl font-bold mb-6">Ananda Tours</h2>
           <p className="mb-8 text-lg leading-relaxed">
             Crafting unforgettable sports experiences for over a decade. We
             specialize in domestic and international tours that combine athletic
