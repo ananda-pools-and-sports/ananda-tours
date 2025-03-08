@@ -54,7 +54,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-gray-200 to-gray-400">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold font-heading text-ananda-orange mb-4 animate-fade-in-up">

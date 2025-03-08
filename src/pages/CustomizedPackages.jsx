@@ -7,13 +7,21 @@ import ImageSlider from "../components/ImageSlider";
 import AlertModal from "../components/AlertModal";
 import "../styles/CustomizedPackages.css";
 
-import II1 from "../utils/II1.jpg";
-import II2 from "../utils/II2.jpg";
-import II3 from "../utils/II3.jpg";
-import II4 from "../utils/II4.jpg";
-import II5 from "../utils/II5.jpg";
+import S1 from "../utils/S1.jpg";
+import S2 from "../utils/S2.jpg";
+import S3 from "../utils/S3.jpg";
+import S4 from "../utils/S4.jpg";
+import S5 from "../utils/S5.jpg";
 
-const images = [II1, II2, II3, II4, II5];
+import H1 from "../utils/culture1.jpg";
+import H2 from "../utils/yogafort3.jpg";
+import H3 from "../utils/almaty2.jpg";
+import H4 from "../utils/almaty3.jpg";
+import H5 from "../utils/Adventure-Tourism.avif";
+import H6 from "../utils/basket3.jpg";
+
+const images = [S1, S2, S3, S4, S5];
+const imagesBelow = [H1, H2, H3, H4, H5, H6];
 
 const tourTypes = [
   "Sports Tours",
@@ -345,7 +353,7 @@ const CustomizedPackages = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {images.map((image, index) => (
+          {imagesBelow.map((image, index) => (
             <motion.div
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
@@ -358,15 +366,6 @@ const CustomizedPackages = () => {
                 alt={`Tour image ${index + 1}`}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">
-                  Exciting Destination {index + 1}
-                </h3>
-                <p className="text-gray-600">
-                  Experience the thrill of adventure and the beauty of nature in
-                  this amazing location.
-                </p>
-              </div>
             </motion.div>
           ))}
         </div>

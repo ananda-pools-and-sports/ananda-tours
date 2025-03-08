@@ -12,7 +12,9 @@ const Home = () => {
     <>
       <Hero />
       <WhyBookWithUs />
-      <TourSection />
+      <div id="tours-section">
+        <TourSection />
+      </div>
       <CulturalTours />
       <EduExchangeSection />
       <ExpertiseSection />

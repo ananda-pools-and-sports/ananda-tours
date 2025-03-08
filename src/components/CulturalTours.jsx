@@ -1,14 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
 import { MapPin, Clock, Users, Camera } from "lucide-react";
 import "../styles/CulturalTours.css";
 
-import II1 from "../utils/II1.jpg";
-import II2 from "../utils/II2.jpg";
-import II3 from "../utils/II3.jpg";
-import II4 from "../utils/II4.jpg";
-import II5 from "../utils/II5.jpg";
+import II1 from "../utils/travel5.jpg";
+import II2 from "../utils/turkey2.jpg";
+import II3 from "../utils/S2.jpg";
+import II4 from "../utils/culture1.jpg";
+import II5 from "../utils/yogafort1.jpg";
 
 const images = [II1, II2, II3, II4, II5];
 
@@ -20,6 +21,16 @@ const tourFeatures = [
 ];
 
 const culturalSites = [
+  {
+    name: "Taj Mahal",
+    description:
+      "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.",
+  },
+  {
+    name: "Veer Singh Palace",
+    description:
+      "Datia Palace, also known as Bir Singh Palace or Bir Singh Dev Palace, is situated nearly 75 km from Gwalior city in Madhya Pradesh.",
+  },
   {
     name: "Gwalior Fort",
     description: "Majestic hilltop fort with rich history",
@@ -40,9 +51,14 @@ const culturalSites = [
     description:
       "The Khajuraho Group of Monuments are a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh, India.",
   },
+  {
+    name: "MORE VISITS SOON!!",
+    description: "",
+  },
 ];
 
 const CulturalTours = () => {
+  const navigate = useNavigate();
   return (
     <section className="cultural-tours py-16">
       <div className="container mx-auto px-4">
@@ -74,11 +90,11 @@ const CulturalTours = () => {
               Immerse Yourself in Culture
             </h3>
             <p className="text-lg text-gray-700 mb-6">
-              At Ananda Sports Tours, we believe that staying connected with
-              one's cultural roots is essential. Our carefully crafted cultural
-              tours offer a perfect blend of historical exploration and
-              spiritual enlightenment, allowing you to experience India's rich
-              heritage firsthand.
+              At Ananda Sports Tours, we believe that exploring diverse cultures
+              and heritage is a journey of discovery. Our carefully curated
+              cultural tours offer a perfect blend of historical exploration and
+              spiritual enrichment, allowing you to experience the richness of
+              India's traditions and history firsthand.
             </p>
             <p className="text-lg text-gray-700">
               With years of experience organizing tours to some of India's most
@@ -144,6 +160,7 @@ const CulturalTours = () => {
             className="book-button text-white py-3 px-8 rounded-full text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => navigate("/contact")}
           >
             Book Your Cultural Adventure
           </motion.button>

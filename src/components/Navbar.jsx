@@ -17,11 +17,19 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleScrollToTours = (event) => {
+    event.preventDefault();
+    const section = document.getElementById("tours-section");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navItems = ["About Us", "Tours", "Gallery", "Contact Us"];
+  const navItems = ["About Us", "Tours", "Customize", "Gallery", "Contact Us"];
 
   const NavItem = ({ label, mobile }) => {
     const baseClasses = `relative rounded-md font-medium transition-all duration-300 ease-in-out overflow-hidden group ${
@@ -35,15 +43,23 @@ const Navbar = () => {
         ? "/contact"
         : label === "Tours"
         ? "/tours"
+        : label === "Customize"
+        ? "/customize"
         : label === "About Us"
         ? "/about-us"
+        : label === "Gallery"
+        ? "/gallery"
         : `/#${label.toLowerCase().replace(/\s+/g, "-")}`;
 
     return (
       <Link
         to={href}
         className={`${baseClasses} ${mobile ? mobileClasses : desktopClasses}`}
-        onClick={() => mobile && setIsMenuOpen(false)}
+        onClick={
+          label === "Tours"
+            ? handleScrollToTours
+            : () => mobile && setIsMenuOpen(false)
+        }
       >
         <span
           className={`relative z-10 transition-colors duration-300 ${

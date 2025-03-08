@@ -2,14 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ParallaxSection from "../components/AboutUs/ParallaxSection";
-import AnimatedInfoGraphic from "../components/AboutUs/AnimatedInfoGraphic";
-import InteractiveTimeline from "../components/AboutUs/InteractiveTimeline";
 import TourTypeIcons from "../components/AboutUs/TourTypeIcons";
-import TeamShowcase from "../components/AboutUs/TeamShowcase";
-import TestimonialCarousel from "../components/AboutUs/TestimonialCarousel";
 import AnimatedWorldMap from "../components/AboutUs/AnimatedWorldMap";
 import ProgramInclusions from "../components/AboutUs/ProgramInclusions";
-import FutureGoals from "../components/AboutUs/FutureGoals";
 import CallToAction from "../components/AboutUs/CallToAction";
 
 const AboutUs = () => {
@@ -34,7 +29,7 @@ const AboutUs = () => {
               About Ananda Tours
             </h1>
             <p className="text-xl md:text-2xl">
-              Crafting Unforgettable Experiences Since 2010
+              Crafting Unforgettable Experiences
             </p>
           </div>
         }
@@ -59,12 +54,8 @@ const AboutUs = () => {
               thousands of travelers from around the globe.
             </p>
           </motion.div>
-
-          <AnimatedInfoGraphic />
         </div>
       </section>
-
-      <InteractiveTimeline />
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -75,15 +66,9 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <TeamShowcase />
-
-      <TestimonialCarousel />
-
       <AnimatedWorldMap />
 
       <ProgramInclusions />
-
-      <FutureGoals />
 
       <CallToAction />
     </div>

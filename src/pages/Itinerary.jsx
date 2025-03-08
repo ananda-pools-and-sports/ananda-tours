@@ -14,11 +14,11 @@ import ItineraryAccordion from "../components/ItineraryAccordion";
 import ItineraryTab from "../components/ItineraryTab";
 import BreadcrumbNav from "../components/BreadcrumbNav";
 import "../styles/Itinerary.css";
-import II1 from "../utils/II1.jpg";
-import II2 from "../utils/II2.jpg";
-import II3 from "../utils/II3.jpg";
-import II4 from "../utils/II4.jpg";
-import II5 from "../utils/II5.jpg";
+import II1 from "../utils/CP4.jpg";
+import II2 from "../utils/hockey2.jpg";
+import II3 from "../utils/swim3.jpg";
+import II4 from "../utils/yogafort2.jpg";
+import II5 from "../utils/culture3.jpg";
 
 const itineraries = [
   {

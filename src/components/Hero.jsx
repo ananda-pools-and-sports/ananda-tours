@@ -1,18 +1,28 @@
 import React, { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import SmallHero from "../components/SmallHero";
-import H1 from "../utils/head1.jpg";
+import H1 from "../utils/almaty1.jpg";
 import H2 from "../utils/head2.jpg";
-import SH1 from "../utils/shead1.jpg";
-import SH2 from "../utils/shead2.jpg";
-import SH3 from "../utils/shead3.jpg";
-import SH4 from "../utils/shead4.jpg";
+import H3 from "../utils/yogafort1.jpg";
+import H4 from "../utils/turkey3.jpg";
+import H5 from "../utils/Adventure-Tourism.avif";
+// import SH1 from "../utils/shead1.jpg";
+// import SH2 from "../utils/shead2.jpg";
+// import SH3 from "../utils/shead3.jpg";
+// import SH4 from "../utils/shead4.jpg";
+import FLAG1 from "../utils/spain.png";
+import FLAG2 from "../utils/kazakhstan.png";
+import FLAG3 from "../utils/turkey.png";
+import FLAG4 from "../utils/dubai.png";
+import FLAG5 from "../utils/india.png";
+import FLAG6 from "../utils/russia.png";
+import FLAG7 from "../utils/belgium.png";
 import "../styles/Hero.css";
 
 const mainSlides = [
   {
     image: H1,
-    title: "WHERE WILL YOUR NEXT SPORTS JOURNEY TAKE YOU?",
+    title: "WHERE WILL YOUR NEXT JOURNEY TAKE YOU?",
     subtitle: "Experience the thrill of international competitions",
   },
   {
@@ -20,33 +30,48 @@ const mainSlides = [
     title: "TAILORED SPORTS TOURS FOR EVERY TEAM",
     subtitle: "From school groups to professional athletes",
   },
+  {
+    image: H3,
+    title: "CULTURAL TOURS: DISCOVER HERITAGE & TRADITIONS",
+    subtitle: "Immerse yourself in the history, art, and local culture",
+  },
+  {
+    image: H4,
+    title: "EDUCATIONAL TOURS: LEARN BEYOND CLASSROOMS",
+    subtitle: "Explore global learning experiences in top institutions",
+  },
+  {
+    image: H5,
+    title: "ADVENTURE TOURS: EMBRACE THE THRILL",
+    subtitle: "From mountains to oceans, embark on an unforgettable journey",
+  },
 ];
 
-const smallSlides = [SH1, SH2, SH3, SH4];
+const smallSlides = [FLAG1, FLAG2, FLAG3, FLAG4, FLAG5, FLAG6, FLAG7];
 
 const destinations = [
   {
-    country: "LONDON",
-    flag: "/placeholder.svg?height=100&width=100",
-    type: "MARATHON",
+    country: "SPAIN",
+    flag: FLAG1,
+    type: "Football",
     date: "04.21.25",
   },
   {
-    country: "CAPE TOWN",
-    flag: "/placeholder.svg?height=100&width=100",
-    type: "MARATHON",
+    country: "ALMATY",
+    flag: FLAG2,
+    type: "Skiing",
     date: "10.19.25",
   },
   {
-    country: "BERLIN",
-    flag: "/placeholder.svg?height=100&width=100",
-    type: "MARATHON",
+    country: "TURKEY",
+    flag: FLAG3,
+    type: "Basketball",
     date: "09.21.25",
   },
   {
-    country: "DUBLIN",
-    flag: "/placeholder.svg?height=100&width=100",
-    type: "MARATHON",
+    country: "DUBAI",
+    flag: FLAG4,
+    type: "Edu Exchange Program",
     date: "10.26.25",
   },
 ];
@@ -63,7 +88,7 @@ const Hero = () => {
   useEffect(() => {
     const mainInterval = setInterval(() => {
       setActiveMainSlide((prev) => (prev + 1) % mainSlides.length);
-    }, 5000);
+    }, 4000);
 
     const smallInterval = setInterval(() => {
       setActiveSmallSlide((prev) => (prev + 1) % smallSlides.length);
@@ -125,7 +150,9 @@ const Hero = () => {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === activeMainSlide ? "opacity-100" : "opacity-0"
+              index === activeMainSlide
+                ? "opacity-100 pointer-events-auto"
+                : "opacity-0 pointer-events-none"
             }`}
           >
             <img
@@ -149,13 +176,13 @@ const Hero = () => {
               >
                 {slide.subtitle}
               </p>
-              <button
+              {/* <button
                 className="bg-orange-500 text-white font-bold py-3 px-8 rounded-full w-max hover:bg-orange-600 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 text-lg flex items-center group parallax"
                 data-speed="0.05"
               >
                 Explore Tours
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </button> */}
             </div>
           </div>
         ))}
@@ -192,7 +219,7 @@ const Hero = () => {
           </p>
           <div className="space-y-4">
             <button className="w-full bg-white text-orange-500 font-bold py-3 px-6 rounded-full hover:bg-orange-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 text-base">
-              Explore Tours
+              Explore Tours Below
             </button>
           </div>
         </div>

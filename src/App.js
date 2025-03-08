@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import CustomizedPackages from "./pages/CustomizedPackages";
 import ContactSection from "./pages/ContactSection";
 import AboutUs from "./pages/AboutUs";
+import FloatingContactButton from "./components/FloatingContactButton";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
           <Route path="/customize" element={<CustomizedPackages />} />
           <Route path="/contact" element={<ContactSection />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>
+      <FloatingContactButton />
       <Footer />
     </div>
   );

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Facebook,
@@ -6,27 +5,11 @@ import {
   Mail,
   MapPin,
   Phone,
-  Send,
   PhoneIcon as WhatsApp,
 } from "lucide-react";
 import logo from "../utils/logo.png";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-
-  // NOTE: In a production environment, this should be handled by a secure backend service.
-  // The current implementation using a mailto link is for demonstration purposes only.
-  // Implement proper server-side logic to handle newsletter subscriptions securely.
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    // In a real-world application, you would typically send this data to a server
-    // For demonstration purposes, we're using a mailto link
-    window.location.href = `mailto:anandapoolsandsports@gmail.com?subject=Newsletter Subscription&body=Please add ${email} to the newsletter list.`;
-    setEmail("");
-    // Show a success message to the user
-    alert("Thank you for subscribing to our newsletter!");
-  };
-
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -34,13 +17,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img
-              src={logo}
-              alt="Ananda Sports Tours Logo"
+              src={logo || "/placeholder.svg"}
+              alt="Ananda Tours Logo"
               className="w-auto h-16 sm:h-20 md:h-24 lg:h-28 object-contain transition-transform duration-300 hover:scale-105"
             />
             <p className="text-gray-400 text-sm">
               Empowering athletes through world-class sports tours and training
-              experiences and get your cutsom/tailorised package now!
+              experiences. Get your custom/tailored package now!
             </p>
             <div className="flex space-x-4">
               <a
@@ -92,10 +75,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/tours"
+                  to="/customize"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Our Tours
+                  Customize Tour
                 </Link>
               </li>
               <li>
@@ -127,42 +110,28 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-ananda-orange" />
-                <a
-                  href="mailto:info@anandasportstours.com"
-                  className="hover:underline"
-                >
-                  info@anandasportstours.com
-                </a>
+                <a className="hover:underline">anandasportstours@gmail.com</a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-ananda-orange" />
-                <span>123 Sports Avenue, Bangalore, Karnataka, India</span>
+                <span>
+                  67 YAMUNA NAGAR, Darpan Colony, Gwalior, Thatipur, Gird,
+                  Gwalior - 474001, Madhya Pradesh, India.
+                </span>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Additional Information */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Stay updated with our latest tours and offers.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-ananda-orange w-full"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button
-                type="submit"
-                className="bg-ananda-orange text-white px-4 py-2 rounded-r-md hover:bg-ananda-orange-dark transition-colors"
-              >
-                <Send size={18} />
-              </button>
-            </form>
+            <h3 className="text-lg font-semibold mb-4">Why Choose Us</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>Customized Sports Tours</li>
+              <li>Expert Coaches and Trainers</li>
+              <li>State-of-the-art Facilities</li>
+              <li>Cultural Immersion</li>
+              <li>Comprehensive Support</li>
+            </ul>
           </div>
         </div>
 

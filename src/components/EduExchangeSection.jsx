@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ImageSlider from "../components/ImageSlider";
 
-import S1 from "../utils/S1.jpg";
-import S2 from "../utils/S2.jpg";
-import S3 from "../utils/S3.jpg";
-import S4 from "../utils/S4.jpg";
-import S5 from "../utils/S5.jpg";
+import S1 from "../utils/basket4.jpg";
+import S2 from "../utils/travel2.jpg";
+import S3 from "../utils/turkey3.jpg";
+import S4 from "../utils/CP2.jpg";
+import S5 from "../utils/basket5.jpg";
 
 const eduExchangeImages = [S1, S2, S3, S4, S5];
 

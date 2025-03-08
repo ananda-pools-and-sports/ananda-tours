@@ -291,9 +291,9 @@ const WhyBookWithUs = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <button className="bg-white text-orange-600 font-bold py-3 px-8 rounded-full text-lg sm:text-xl hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce font-sans">
+          {/* <button className="bg-white text-orange-600 font-bold py-3 px-8 rounded-full text-lg sm:text-xl hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce font-sans">
             Explore Our Tours
-          </button>
+          </button> */}
         </div>
 
         <div className="mt-20">
