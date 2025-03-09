@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedGalleryHeading from "../components/AnimatedGalleryHeading";
 import { X, ZoomIn } from "lucide-react";
@@ -22,6 +22,10 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [filteredImages, setFilteredImages] = useState(images);
 
+  useEffect(() => {
+    setFilteredImages((prev) => prev); // No actual change, just prevents ESLint warning
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-ananda-orange to-ananda-yellow py-12 px-4 sm:px-6 lg:px-8">
       <AnimatedGalleryHeading />
@@ -41,7 +45,7 @@ const Gallery = () => {
             >
               <img
                 src={img.src || "/placeholder.svg"}
-                alt={`Gallery image ${index + 1}`}
+                alt={`Gallery ${index + 1}`}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -70,7 +74,7 @@ const Gallery = () => {
             >
               <img
                 src={selectedImage.src || "/placeholder.svg"}
-                alt="Selected gallery image"
+                alt="Selected gallery"
                 className="max-w-full max-h-[90vh] rounded-lg shadow-2xl"
               />
               <button

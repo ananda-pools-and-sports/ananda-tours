@@ -363,7 +363,7 @@ const CustomizedPackages = () => {
             >
               <img
                 src={image || "/placeholder.svg"}
-                alt={`Tour image ${index + 1}`}
+                alt={`Tour ${index + 1}`}
                 className="w-full h-48 object-cover"
               />
             </motion.div>

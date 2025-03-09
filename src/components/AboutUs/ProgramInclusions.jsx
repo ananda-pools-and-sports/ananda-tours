@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Check, Hotel, Utensils, Bus, Ticket, Map, Shield } from "lucide-react";
+import { Hotel, Utensils, Bus, Ticket, Map, Shield } from "lucide-react";
 
 const inclusions = [
   { icon: Hotel, label: "Premium Accommodations" },

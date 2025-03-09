@@ -290,53 +290,14 @@ const WhyBookWithUs = () => {
           className={`mt-16 text-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
-        >
-          {/* <button className="bg-white text-orange-600 font-bold py-3 px-8 rounded-full text-lg sm:text-xl hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce font-sans">
-            Explore Our Tours
-          </button> */}
+        ></div>
+        <div className="text-center text-white mt-10">
+          <p className="text-lg italic">
+            "{testimonials[activeTestimonial].text}"
+          </p>
+          <p className="font-bold">{testimonials[activeTestimonial].name}</p>
+          <p className="text-sm">{testimonials[activeTestimonial].role}</p>
         </div>
-
-        {/* <div className="mt-20">
-          <h3 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8 font-sans">
-            What Our Customers Say
-          </h3>
-          <div className="relative h-64 sm:h-48">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`absolute top-0 left-0 w-full transition-all duration-500 ${
-                  index === activeTestimonial
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-                }`}
-              >
-                <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-6 mx-auto max-w-2xl">
-                  <p className="text-gray-700 mb-4 text-base sm:text-lg italic font-sans">
-                    &ldquo;{testimonial.text}&rdquo;
-                  </p>
-                  <div className="font-semibold text-orange-600 font-sans">
-                    {testimonial.name} -{" "}
-                    <span className="text-gray-600">{testimonial.role}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-center mt-4">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full mx-1 focus:outline-none ${
-                  index === activeTestimonial
-                    ? "bg-white"
-                    : "bg-white bg-opacity-50"
-                }`}
-                onClick={() => setActiveTestimonial(index)}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div> */}
 
         <div className="mt-16 text-center">
           <h3 className="text-3xl font-bold text-white mb-6 font-sans">

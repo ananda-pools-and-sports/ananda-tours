@@ -110,7 +110,12 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 text-ananda-orange" />
-                <a className="hover:underline">anandasportstours@gmail.com</a>
+                <a
+                  href="mailto:anandasportstours@gmail.com"
+                  className="hover:underline"
+                >
+                  anandasportstours@gmail.com
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-ananda-orange" />
