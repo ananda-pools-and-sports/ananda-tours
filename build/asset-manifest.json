@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.acc9350d.css",
-    "main.js": "/static/js/main.abb05555.js",
+    "main.css": "/static/css/main.06000de9.css",
+    "main.js": "/static/js/main.05ca5033.js",
     "static/media/CP2.jpg": "/static/media/CP2.f0c428be87aa5461f63c.jpg",
     "static/media/CP1.jpg": "/static/media/CP1.8a4a8a9a4b6e2b1d67f4.jpg",
+    "static/media/logo.png": "/static/media/logo.81c3d88879caaf5b9f23.png",
     "static/media/S4.jpg": "/static/media/S4.7552981daf9367803704.jpg",
     "static/media/head2.jpg": "/static/media/head2.1e22a76c4929752cf5ca.jpg",
     "static/media/shead2.jpg": "/static/media/shead2.1e22a76c4929752cf5ca.jpg",
@@ -21,7 +22,6 @@
     "static/media/II5.jpg": "/static/media/II5.1818587141f20eb656ad.jpg",
     "static/media/S2.jpg": "/static/media/S2.eb1a3db52c91fa0e8c73.jpg",
     "static/media/yogafort1.jpg": "/static/media/yogafort1.57df0ae7a7b2110c6c1a.jpg",
-    "static/media/logo.png": "/static/media/logo.071c0c42138c496f2a5a.png",
     "static/media/II1.jpg": "/static/media/II1.0dc06c8985e53036c0a1.jpg",
     "static/media/yogafort2.jpg": "/static/media/yogafort2.7128dc5339c3cc19e98a.jpg",
     "static/media/culture1.jpg": "/static/media/culture1.66e88246eb8a74783e8c.jpg",
@@ -61,11 +61,11 @@
     "static/media/Adventure-Tourism.jpg": "/static/media/Adventure-Tourism.5cb089c8efbcced65f48.jpg",
     "index.html": "/index.html",
     "static/media/world-map.svg": "/static/media/world-map.dd24b929f436fe8fed4e.svg",
-    "main.acc9350d.css.map": "/static/css/main.acc9350d.css.map",
-    "main.abb05555.js.map": "/static/js/main.abb05555.js.map"
+    "main.06000de9.css.map": "/static/css/main.06000de9.css.map",
+    "main.05ca5033.js.map": "/static/js/main.05ca5033.js.map"
   },
   "entrypoints": [
-    "static/css/main.acc9350d.css",
-    "static/js/main.abb05555.js"
+    "static/css/main.06000de9.css",
+    "static/js/main.05ca5033.js"
   ]
 }
