@@ -6,6 +6,7 @@ import H2 from "../utils/head2.jpg";
 import H3 from "../utils/yogafort1.jpg";
 import H4 from "../utils/turkey3.jpg";
 import H5 from "../utils/Adventure-Tourism.avif";
+import H6 from "../utils/om.jpg";
 // import SH1 from "../utils/shead1.jpg";
 // import SH2 from "../utils/shead2.jpg";
 // import SH3 from "../utils/shead3.jpg";
@@ -20,6 +21,11 @@ import FLAG7 from "../utils/belgium.png";
 import "../styles/Hero.css";
 
 const mainSlides = [
+  {
+    image: H6,
+    title: "UPCOMING TOUR... ",
+    subtitle: "ADI KAILASH-OM PARVAT YATRA",
+  },
   {
     image: H1,
     title: "WHERE WILL YOUR NEXT JOURNEY TAKE YOU?",
